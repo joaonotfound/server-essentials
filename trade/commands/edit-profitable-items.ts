@@ -4,8 +4,8 @@ import { NetworkIdentifier } from "bdsx/bds/networkidentifier";
 import { Player } from "bdsx/bds/player";
 import { command } from "bdsx/command";
 import { announce, isUndefined } from "../../utils";
-import { ProfitableItem, profitableItemsCollections } from "../utils/profitable-items-collection";
-import { selectProfItem } from "../utils/select-prof-item";
+import { ProfitableItem, profitableItemsCollections } from "../../server-utils/utils/profitable-items-collection";
+import { selectProfItem } from "../../server-utils/utils/select-prof-item";
 
 const edit = async (ni: NetworkIdentifier, item: ProfitableItem) => {
     const response = await Form.sendTo(ni, {
