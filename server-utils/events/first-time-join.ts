@@ -1,15 +1,15 @@
-import { events } from "bdsx/event"
-import { savePlayerStorage, openPlayerStorage } from "../../utils"
-import { createPlot } from "../utils/create-plot"
+import { events } from "bdsx/event";
+import { savePlayerStorage, openPlayerStorage } from "../../utils";
+import { createPlot } from "../utils/create-plot";
 
-events.playerJoin.on(async ({ player }) => {
-    const storage = await openPlayerStorage(player)
-    if (!storage.home) {
-        const plot = await createPlot(player)
-        storage.home = plot.key
-        savePlayerStorage(player, storage)
-    }
-})
+// events.playerJoin.on(async ({ player }) => {
+//     const storage = await openPlayerStorage(player)
+//     if (!storage.home) {
+//         const plot = await createPlot(player)
+//         storage.home = plot.key
+//         savePlayerStorage(player, storage)
+//     }
+// })
 
 // events.playerJoin.on(async ({ player }) => {
 //     const storage = await openPlayerStorage(player)
