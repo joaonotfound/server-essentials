@@ -1,3 +1,1 @@
-
-# server-essentials Plugin
-The plugin for bdsx
+to use this plugin just clone it into the plugin's folder
